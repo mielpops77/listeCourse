@@ -12,10 +12,10 @@ app.set('port', (process.env.port || 3500));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cors());
-app.use('/api/v1',api);
+app.use('/api/v1',api); 
 
 
-mongoose.connect('mongodb://localhost:27017/listeCourse',{useNewUrlParser: true,useUnifiedTopology: true
+mongoose.connect('mongodb://localhost:27017',{useNewUrlParser: true,useUnifiedTopology: true
     
 });
 
@@ -44,5 +44,7 @@ connection
         
     })
    
+
+
 
 
